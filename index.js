@@ -20,7 +20,7 @@ const file_names = files.map(([file_name]) => file_name);
 
 try {
   files.map(([file_name, env_string]) =>
-    fs.writeFileSync(file_name, "test string")
+    fs.writeFileSync(".test.env", "test string")
   );
   console.log(makeSuccessMessage(file_names));
 } catch (err) {
