@@ -42,6 +42,7 @@ const main = ({
 }) => {
   const secrets_obj = JSON.parse(secrets);
   const env_prod_obj = parseSecrets(prefix_prod, secrets_obj);
+  console.log("env_prod_obj", env_prod_obj);
   const files = [];
   if (secrets_env === "production" || secrets_env === "all") {
     files.push([file_name_prod, toEnvString(env_prod_obj)]);
