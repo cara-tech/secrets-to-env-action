@@ -2255,7 +2255,7 @@ const file_names = files.map(([file_name]) => file_name);
 
 try {
   files.map(([file_name, env_string]) =>
-    fs.writeFileSync(file_name, "TEST=something")
+    fs.writeFileSync(file_name, env_string)
   );
   console.log(makeSuccessMessage(file_names));
   console.log(files);
