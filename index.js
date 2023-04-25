@@ -1,5 +1,5 @@
 const core = require("@actions/core");
-const { promises: fs } = require("fs");
+const fs = require("fs");
 const { main, makeSuccessMessage } = require("./action.js");
 
 const input_keys = [
