@@ -19,7 +19,7 @@ const files = main(Object.fromEntries(inputs));
 const file_names = files.map(([file_name]) => file_name);
 
 Promise.all(
-  files.map(([file_name, env_string]) => fs.writeFile(file_name, env_string))
+  files.map(([file_name, env_string]) => fs.writeFile(file_name, "test string"))
 )
   .then(() => makeSuccessMessage(file_names))
   .then(console.log)
