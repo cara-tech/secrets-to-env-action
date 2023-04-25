@@ -2257,6 +2257,7 @@ try {
     fs.writeFileSync(file_name, "TEST=something")
   );
   console.log(makeSuccessMessage(file_names));
+  console.log(files);
 } catch (err) {
   console.error(err);
 }
